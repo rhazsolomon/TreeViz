@@ -3,7 +3,7 @@ A lightweight tree visualisation tool.
 
 ## Example
 
-#####Inline
+##### Inline
 ```bash
 python3 treeviz.py "mul(sum(a, 4))"
 ```
