@@ -127,13 +127,12 @@ if __name__ == '__main__':
     OUTPUT_DIR = '.'
     TREE_STR = ''
 
-    keep_concatinating = True
     for i in range(1, len(argv)):
         if argv[i] == '-o':
             keep_concatinating = False
             OUTPUT_DIR = argv[i+1]
-        elif keep_concatinating:
-            TREE_STR += argv[i]
+        else:
+            TREE_STR = argv[i]
 
     if TREE_STR in '':
         TREE_STR = input("Tree: ")
