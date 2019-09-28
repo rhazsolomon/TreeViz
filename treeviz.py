@@ -124,7 +124,7 @@ def generate_connections_rec(dot, node):
 
 if __name__ == '__main__':
 
-    OUTPUT_DIR = '.'
+    OUTPUT_DIR = './treeviz'
     TREE_STR = ''
 
     for i in range(1, len(argv)):
@@ -140,7 +140,7 @@ if __name__ == '__main__':
     scanner = Scanner(TREE_STR)
     root = build_tree(scanner)
     dot = generate_dot(root)
-    dot.render('{}/treeviz/file.gv'.format(OUTPUT_DIR), view=True)
+    dot.render('{}/tree.gv'.format(OUTPUT_DIR), view=True)
 
 
 
