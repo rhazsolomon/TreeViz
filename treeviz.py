@@ -104,7 +104,7 @@ def parseTerminalNode(scanner):
 
 
 def generate_dot(root):
-    dot  = Digraph(comment='Graph')
+    dot  = Digraph(comment='Graph', format='png')
     generate_node_rec(dot, root, "0")
     generate_connections_rec(dot, root)
     return dot
